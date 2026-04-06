@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resume — {{name}}</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Calibri', 'Segoe UI', Arial, sans-serif;
+      font-size: 10.5pt;
+      color: #1a1a1a;
+      background: #fff;
+      padding: 0.6in 0.7in;
+      max-width: 8.5in;
+    }
+
+    /* Header */
+    .header {
+      text-align: center;
+      border-bottom: 2px solid #1a3c5e;
+      padding-bottom: 8px;
+      margin-bottom: 12px;
+    }
+
+    .header h1 {
+      font-size: 20pt;
+      font-weight: 700;
+      color: #1a3c5e;
+      letter-spacing: 0.5px;
+    }
+
+    .header .tagline {
+      font-size: 10pt;
+      color: #444;
+      margin-top: 2px;
+    }
+
+    .header .contact {
+      font-size: 9pt;
+      color: #555;
+      margin-top: 4px;
+    }
+
+    .header .contact a {
+      color: #1a3c5e;
+      text-decoration: none;
+    }
+
+    /* Section Headers */
+    .section-title {
+      font-size: 11pt;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #1a3c5e;
+      border-bottom: 1px solid #1a3c5e;
+      margin: 14px 0 6px 0;
+      padding-bottom: 2px;
+      letter-spacing: 0.8px;
+    }
+
+    /* Summary */
+    .summary {
+      font-size: 10pt;
+      line-height: 1.5;
+      color: #2a2a2a;
+    }
+
+    /* Skills */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4px 20px;
+      font-size: 9.5pt;
+    }
+
+    .skill-item::before {
+      content: "▪ ";
+      color: #1a3c5e;
+    }
+
+    /* Experience */
+    .job {
+      margin-bottom: 12px;
+    }
+
+    .job-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    .job-title {
+      font-weight: 700;
+      font-size: 10.5pt;
+      color: #1a1a1a;
+    }
+
+    .job-dates {
+      font-size: 9.5pt;
+      color: #666;
+      white-space: nowrap;
+    }
+
+    .job-company {
+      font-style: italic;
+      color: #444;
+      font-size: 10pt;
+      margin-bottom: 4px;
+    }
+
+    .job ul {
+      padding-left: 16px;
+    }
+
+    .job li {
+      font-size: 9.5pt;
+      line-height: 1.5;
+      margin-bottom: 2px;
+      color: #2a2a2a;
+    }
+
+    /* Certifications */
+    .certs {
+      font-size: 9.5pt;
+    }
+
+    .cert-item {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 3px;
+    }
+
+    .cert-name { font-weight: 600; }
+    .cert-status {
+      color: #1a3c5e;
+      font-style: italic;
+    }
+
+    /* Education */
+    .education-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 4px;
+    }
+
+    .edu-title { font-weight: 700; font-size: 10pt; }
+    .edu-org { font-style: italic; color: #555; font-size: 9.5pt; }
+    .edu-date { font-size: 9.5pt; color: #666; }
+
+    /* Projects */
+    .project {
+      margin-bottom: 8px;
+    }
+
+    .project-header {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .project-name {
+      font-weight: 700;
+      font-size: 10pt;
+      color: #1a3c5e;
+    }
+
+    .project-link {
+      font-size: 9pt;
+      color: #555;
+    }
+
+    .project p {
+      font-size: 9.5pt;
+      color: #2a2a2a;
+      line-height: 1.4;
+      margin-top: 2px;
+    }
+
+    @media print {
+      body { padding: 0.5in 0.6in; }
+      a { color: inherit !important; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER — replace placeholders with actual content -->
+  <div class="header">
+    <h1>{{name}}</h1>
+    <div class="tagline">{{tagline}}</div>
+    <div class="contact">
+      {{email}} &nbsp;|&nbsp; {{phone}} &nbsp;|&nbsp; {{location}}
+      &nbsp;|&nbsp; <a href="{{linkedin}}">LinkedIn</a>
+      &nbsp;|&nbsp; <a href="{{github}}">GitHub</a>
+    </div>
+  </div>
+
+  <!-- PROFESSIONAL SUMMARY -->
+  <div class="section-title">Professional Summary</div>
+  <p class="summary">{{summary}}</p>
+
+  <!-- TECHNICAL SKILLS -->
+  <div class="section-title">Technical Skills</div>
+  <div class="skills-grid">
+    {{skills}}
+  </div>
+
+  <!-- CERTIFICATIONS -->
+  <div class="section-title">Certifications</div>
+  <div class="certs">
+    {{certifications}}
+  </div>
+
+  <!-- EXPERIENCE -->
+  <div class="section-title">Experience</div>
+  {{experience}}
+
+  <!-- PROJECTS -->
+  <div class="section-title">Projects</div>
+  {{projects}}
+
+  <!-- EDUCATION -->
+  <div class="section-title">Education</div>
+  {{education}}
+
+</body>
+</html>

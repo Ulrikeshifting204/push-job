@@ -1,0 +1,78 @@
+# Push Job — User Profile
+# Copy this file to config/profile.yml and fill in your details.
+# config/profile.yml is gitignored — it stays local.
+
+identity:
+  name: "Tushae Thomas"
+  preferred_name: "Brian"
+  brand: "BER/TMG"
+  location: "Charlotte, NC"
+  github: "TushaeThomas"
+  linkedin: ""  # your LinkedIn URL
+  email: ""     # your contact email
+
+target_roles:
+  primary:
+    - "SOC Analyst"
+    - "Cloud Security Engineer"
+    - "Cloud Engineer"
+  secondary:
+    - "DevSecOps Engineer"
+    - "Security Operations Engineer"
+    - "Jr. Cloud Engineer"
+
+location_preferences:
+  remote: true
+  hybrid: true
+  onsite: false
+  onsite_cities: []  # cities you'd consider on-site for
+  relocation: false
+
+compensation:
+  minimum_salary: 65000   # USD annual
+  target_salary: 80000
+  currency: "USD"
+  open_to_contract: true
+  contract_minimum_rate: 35  # hourly
+
+company_preferences:
+  sizes:
+    - "startup"
+    - "mid-size"
+    - "enterprise"
+  industries_to_avoid:
+    - "gambling"
+    - "tobacco"
+  prefer_mission_driven: true
+
+certifications:
+  tier1_in_progress:
+    - name: "AWS CLF-C02"
+      progress: "50%"          # update this as you study
+      target_date: "2026-05-01"
+    - name: "CompTIA CySA+"
+      progress: "30%"
+      target_date: "2026-06-01"
+  tier2_next:
+    - "AWS SAA-C03"
+    - "CompTIA Security+"
+    - "Microsoft AZ-500"
+  tier3_later:
+    - "AWS SAP-C02"
+    - "CISSP"
+    - "CCSP"
+  completed: []
+
+technical_skills:
+  cloud: ["AWS", "Azure", "Microsoft 365"]
+  security: ["Microsoft Sentinel", "KQL", "Active Directory", "Honeynet", "SIEM", "SOC operations"]
+  tools: ["Wireshark", "Nmap", "Splunk (basic)"]
+  scripting: ["Bash", "PowerShell (basic)"]
+  other: ["Claude Code", "Git", "Linux"]
+
+application_settings:
+  weekly_target: 5          # quality applications per week
+  auto_skip_below_score: 4.0
+  always_generate_cover: true
+  followup_day_1: 7         # days after applying to send first follow-up
+  followup_day_2: 14        # days after applying to mark cold

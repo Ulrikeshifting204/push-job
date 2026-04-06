@@ -1,0 +1,73 @@
+# Push Job — Scoring Weights
+# Modify these weights to tune the 12-dimension scoring system.
+# Weights must sum to 1.00 (100%).
+
+dimensions:
+  role_match:
+    weight: 0.12
+    description: "Title and JD alignment with target roles"
+
+  tech_stack_alignment:
+    weight: 0.12
+    description: "Overlap with AWS, Azure, KQL, Sentinel, AD, honeynet"
+
+  ats_keyword_match:
+    weight: 0.10
+    description: "JD keywords present in resume.md"
+
+  cert_alignment:
+    weight: 0.10
+    description: "Required/preferred certs vs. Brian's tier profile"
+
+  compensation_fit:
+    weight: 0.10
+    description: "Stated or estimated comp vs. minimum salary in profile.yml"
+
+  growth_trajectory:
+    weight: 0.08
+    description: "Will this role accelerate the path to senior cloud/cyber?"
+
+  culture_mission:
+    weight: 0.08
+    description: "Company mission alignment and team culture signals"
+
+  location_remote:
+    weight: 0.08
+    description: "Remote-friendly or Charlotte, NC proximity"
+
+  portfolio_relevance:
+    weight: 0.08
+    description: "portfolio.md proof points matching JD requirements"
+
+  interview_probability:
+    weight: 0.06
+    description: "Likelihood of passing ATS + hiring manager screen"
+
+  urgency:
+    weight: 0.04
+    description: "Time-sensitive opportunity, expiring posting, hot company"
+
+  network_referral:
+    weight: 0.04
+    description: "Warm connection, referral, or community overlap"
+
+tiers:
+  apply_now:
+    min: 8.0
+    label: "Apply Now"
+    action: "Tailored resume + cover letter today"
+
+  apply_tailor:
+    min: 6.0
+    label: "Apply / Tailor"
+    action: "Polish resume, generate cover letter"
+
+  low_priority:
+    min: 4.0
+    label: "Low Priority"
+    action: "Keep in pipeline, apply only if week is slow"
+
+  skip:
+    min: 0.0
+    label: "Skip"
+    action: "Log as SKIP in tracker, move on"

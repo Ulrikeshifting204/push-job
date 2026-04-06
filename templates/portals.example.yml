@@ -1,0 +1,317 @@
+# portals.example.yml — Job Portal and Company List
+# Copy this file to portals.yml (gitignored) and customize it.
+# Set skip: true for companies you'd never apply to.
+# Add your own entries at the bottom.
+
+# ─────────────────────────────────────────────
+# CLOUD PROVIDERS
+# ─────────────────────────────────────────────
+
+cloud_providers:
+  - name: "Amazon Web Services (AWS)"
+    careers_url: "https://www.amazon.jobs/en/teams/aws"
+    search_terms: ["cloud engineer", "cloud security", "devsecops", "security engineer"]
+    notes: "Filter by remote or Charlotte/US-wide"
+
+  - name: "Microsoft Azure"
+    careers_url: "https://careers.microsoft.com"
+    search_terms: ["cloud engineer", "security engineer", "azure security", "SOC analyst"]
+
+  - name: "Google Cloud (GCP)"
+    careers_url: "https://careers.google.com"
+    search_terms: ["cloud security engineer", "security engineer", "trust and safety"]
+
+  - name: "Cloudflare"
+    careers_url: "https://www.cloudflare.com/careers/jobs/"
+    search_terms: ["security engineer", "SOC analyst", "cloud engineer"]
+    notes: "Strong remote culture"
+
+  - name: "Fastly"
+    careers_url: "https://www.fastly.com/about/careers"
+    search_terms: ["security engineer", "cloud engineer"]
+
+  - name: "DigitalOcean"
+    careers_url: "https://www.digitalocean.com/careers"
+    search_terms: ["cloud engineer", "security engineer", "devsecops"]
+
+  - name: "Akamai Technologies"
+    careers_url: "https://www.akamai.com/careers"
+    search_terms: ["security analyst", "cloud security engineer"]
+
+# ─────────────────────────────────────────────
+# CLOUD MANAGED SERVICE PROVIDERS (MSPs)
+# ─────────────────────────────────────────────
+
+cloud_msps:
+  - name: "Rackspace Technology"
+    careers_url: "https://www.rackspace.com/talent"
+    search_terms: ["cloud engineer", "cloud security"]
+    notes: "Charlotte-area presence"
+
+  - name: "2nd Watch"
+    careers_url: "https://www.2ndwatch.com/careers/"
+    search_terms: ["cloud engineer", "AWS engineer"]
+
+  - name: "Logicworks"
+    careers_url: "https://www.logicworks.com/careers/"
+    search_terms: ["cloud engineer", "cloud security", "devops"]
+
+  - name: "Presidio"
+    careers_url: "https://www.presidio.com/careers/"
+    search_terms: ["cloud security", "security engineer", "cloud architect"]
+
+# ─────────────────────────────────────────────
+# CYBERSECURITY — EDR / XDR / ENDPOINT
+# ─────────────────────────────────────────────
+
+cybersecurity_edr:
+  - name: "CrowdStrike"
+    careers_url: "https://www.crowdstrike.com/careers/"
+    search_terms: ["SOC analyst", "security analyst", "threat hunter", "cloud security"]
+
+  - name: "SentinelOne"
+    careers_url: "https://www.sentinelone.com/careers/"
+    search_terms: ["SOC analyst", "security engineer", "threat intelligence"]
+
+  - name: "Cybereason"
+    careers_url: "https://www.cybereason.com/company/careers"
+    search_terms: ["SOC analyst", "security analyst", "threat hunter"]
+
+  - name: "Huntress"
+    careers_url: "https://www.huntress.com/company/careers"
+    search_terms: ["SOC analyst", "security analyst", "threat hunter"]
+    notes: "Mid-market MSP-focused security — good fit for background"
+
+  - name: "Rapid7"
+    careers_url: "https://www.rapid7.com/company/careers/"
+    search_terms: ["SOC analyst", "security analyst", "cloud security"]
+
+# ─────────────────────────────────────────────
+# CYBERSECURITY — NETWORK / IDENTITY / FIREWALL
+# ─────────────────────────────────────────────
+
+cybersecurity_network:
+  - name: "Palo Alto Networks"
+    careers_url: "https://www.paloaltonetworks.com/company/careers"
+    search_terms: ["cloud security engineer", "security analyst", "SASE"]
+
+  - name: "Okta"
+    careers_url: "https://www.okta.com/company/careers/"
+    search_terms: ["security engineer", "identity security", "cloud engineer"]
+
+  - name: "Zscaler"
+    careers_url: "https://www.zscaler.com/careers"
+    search_terms: ["cloud security engineer", "SOC analyst", "security operations"]
+
+  - name: "Fortinet"
+    careers_url: "https://www.fortinet.com/corporate/careers"
+    search_terms: ["security analyst", "cloud security", "SOC"]
+
+  - name: "Tenable"
+    careers_url: "https://www.tenable.com/about/careers"
+    search_terms: ["security analyst", "cloud security", "vulnerability management"]
+
+# ─────────────────────────────────────────────
+# SIEM / SOC PLATFORMS
+# ─────────────────────────────────────────────
+
+siem_soc:
+  - name: "Splunk"
+    careers_url: "https://www.splunk.com/en_us/careers.html"
+    search_terms: ["SOC analyst", "security engineer", "cloud security"]
+
+  - name: "Elastic"
+    careers_url: "https://www.elastic.co/about/careers"
+    search_terms: ["security analyst", "cloud security", "security engineer"]
+
+  - name: "Devo Technology"
+    careers_url: "https://www.devo.com/careers/"
+    search_terms: ["SOC analyst", "security engineer", "SIEM"]
+
+  - name: "Sumo Logic"
+    careers_url: "https://www.sumologic.com/company/careers/"
+    search_terms: ["SOC analyst", "security analyst", "cloud security"]
+
+  - name: "Arctic Wolf"
+    careers_url: "https://arcticwolf.com/company/careers/"
+    search_terms: ["SOC analyst", "security analyst", "threat detection"]
+    notes: "Strong SOC culture, good for L1/L2 pipeline"
+
+  - name: "Exabeam"
+    careers_url: "https://www.exabeam.com/company/careers/"
+    search_terms: ["SOC analyst", "security analyst", "SIEM engineer"]
+
+# ─────────────────────────────────────────────
+# DEVSECOPS / CLOUD SECURITY POSTURE
+# ─────────────────────────────────────────────
+
+devsecops:
+  - name: "HashiCorp (IBM)"
+    careers_url: "https://www.hashicorp.com/jobs"
+    search_terms: ["security engineer", "cloud engineer", "devops"]
+
+  - name: "Snyk"
+    careers_url: "https://snyk.io/careers/"
+    search_terms: ["security engineer", "devsecops", "cloud security"]
+
+  - name: "Wiz"
+    careers_url: "https://www.wiz.io/careers"
+    search_terms: ["cloud security engineer", "security analyst", "devsecops"]
+    notes: "Fast-growing CSPM — good growth trajectory"
+
+  - name: "Lacework"
+    careers_url: "https://www.lacework.com/company/careers/"
+    search_terms: ["cloud security", "security engineer", "devsecops"]
+
+  - name: "Orca Security"
+    careers_url: "https://orca.security/company/careers/"
+    search_terms: ["cloud security engineer", "SOC analyst"]
+
+  - name: "Aqua Security"
+    careers_url: "https://www.aquasec.com/careers/"
+    search_terms: ["cloud security", "devsecops", "security engineer"]
+
+  - name: "Prisma Cloud (Palo Alto)"
+    careers_url: "https://www.paloaltonetworks.com/company/careers"
+    search_terms: ["cloud security engineer", "CSPM", "devsecops"]
+
+# ─────────────────────────────────────────────
+# DEFENSE / GOVCLOUD
+# ─────────────────────────────────────────────
+
+defense_govcloud:
+  - name: "Booz Allen Hamilton"
+    careers_url: "https://careers.boozallen.com"
+    search_terms: ["cloud engineer", "cloud security", "SOC analyst", "cybersecurity analyst"]
+    notes: "May require clearance — check per role"
+
+  - name: "SAIC"
+    careers_url: "https://www.saic.com/careers"
+    search_terms: ["cloud engineer", "cybersecurity analyst", "security operations"]
+
+  - name: "Leidos"
+    careers_url: "https://www.leidos.com/careers"
+    search_terms: ["SOC analyst", "cloud security", "cybersecurity engineer"]
+
+  - name: "MITRE Corporation"
+    careers_url: "https://www.mitre.org/careers"
+    search_terms: ["cybersecurity engineer", "cloud security", "security researcher"]
+
+  - name: "ManTech"
+    careers_url: "https://www.mantech.com/careers/"
+    search_terms: ["SOC analyst", "cloud security", "cybersecurity"]
+
+  - name: "General Dynamics IT"
+    careers_url: "https://www.gdit.com/careers/"
+    search_terms: ["cloud engineer", "cybersecurity analyst", "SOC"]
+
+# ─────────────────────────────────────────────
+# ENTERPRISE TECH
+# ─────────────────────────────────────────────
+
+enterprise:
+  - name: "Microsoft"
+    careers_url: "https://careers.microsoft.com"
+    search_terms: ["security analyst", "cloud engineer", "azure security", "SOC"]
+    notes: "Search specifically for Microsoft Security and Azure teams"
+
+  - name: "IBM"
+    careers_url: "https://www.ibm.com/employment/"
+    search_terms: ["cloud security", "SOC analyst", "security consultant"]
+
+  - name: "Accenture"
+    careers_url: "https://www.accenture.com/us-en/careers"
+    search_terms: ["cloud security", "cybersecurity analyst", "SOC analyst"]
+
+  - name: "Deloitte"
+    careers_url: "https://jobs2.deloitte.com/us/en"
+    search_terms: ["cloud security", "cybersecurity", "SOC analyst"]
+
+  - name: "KPMG"
+    careers_url: "https://home.kpmg/us/en/home/careers.html"
+    search_terms: ["cloud security", "cybersecurity analyst"]
+
+# ─────────────────────────────────────────────
+# AI / AUTOMATION COMPANIES
+# ─────────────────────────────────────────────
+
+ai_automation:
+  - name: "Anthropic"
+    careers_url: "https://www.anthropic.com/careers"
+    search_terms: ["security engineer", "trust and safety", "cloud security"]
+
+  - name: "Databricks"
+    careers_url: "https://www.databricks.com/company/careers"
+    search_terms: ["cloud security engineer", "security engineer", "devsecops"]
+
+  - name: "Weights & Biases"
+    careers_url: "https://wandb.ai/careers"
+    search_terms: ["security engineer", "cloud engineer", "devsecops"]
+
+  - name: "Scale AI"
+    careers_url: "https://scale.com/careers"
+    search_terms: ["security engineer", "cloud security"]
+
+# ─────────────────────────────────────────────
+# FINANCIAL / FINTECH
+# ─────────────────────────────────────────────
+
+fintech:
+  - name: "Bank of America"
+    careers_url: "https://careers.bankofamerica.com"
+    search_terms: ["cybersecurity analyst", "SOC analyst", "cloud security"]
+    notes: "Charlotte HQ — strong local presence"
+
+  - name: "Wells Fargo"
+    careers_url: "https://www.wellsfargo.com/about/careers/"
+    search_terms: ["cybersecurity analyst", "cloud security", "SOC analyst"]
+    notes: "Charlotte presence"
+
+  - name: "LendingTree"
+    careers_url: "https://www.lendingtree.com/careers/"
+    search_terms: ["security analyst", "cloud engineer", "devsecops"]
+    notes: "Charlotte HQ"
+
+# ─────────────────────────────────────────────
+# JOB BOARDS
+# ─────────────────────────────────────────────
+
+job_boards:
+  - name: "LinkedIn Jobs"
+    url: "https://www.linkedin.com/jobs/"
+    filters:
+      - "SOC Analyst remote"
+      - "Cloud Security Engineer remote"
+      - "DevSecOps Engineer remote"
+      - "Cloud Engineer Charlotte NC"
+    notes: "Set Easy Apply filter OFF for quality roles"
+
+  - name: "Wellfound (AngelList)"
+    url: "https://wellfound.com/jobs"
+    filters:
+      - "security engineer"
+      - "cloud engineer"
+    notes: "Good for startup cloud/security roles"
+
+  - name: "Dice"
+    url: "https://www.dice.com"
+    filters:
+      - "cloud security engineer"
+      - "SOC analyst"
+      - "cybersecurity analyst"
+    notes: "Tech-focused job board, good for cloud/cyber"
+
+  - name: "RemoteOK"
+    url: "https://remoteok.com"
+    filters:
+      - "security"
+      - "cloud"
+      - "devsecops"
+    notes: "Remote-only roles, check daily"
+
+  - name: "CyberSecJobs"
+    url: "https://www.cybersecjobs.com"
+    filters:
+      - "SOC analyst"
+      - "security analyst"
+    notes: "Cybersecurity-specific board"

@@ -1,0 +1,43 @@
+# states.yml — Canonical Application Statuses
+# These are the ONLY valid values for the Status column in data/applications.md.
+# Never use abbreviations, variations, or custom values.
+
+statuses:
+  - name: "Evaluated"
+    description: "Job scored and report generated. Not yet applied."
+    next: ["Applied", "SKIP"]
+
+  - name: "Applied"
+    description: "Application submitted. Awaiting response."
+    next: ["Followed Up", "Responded", "Rejected"]
+
+  - name: "Followed Up"
+    description: "Follow-up sent after 7 days with no response."
+    next: ["Responded", "Discarded", "Rejected"]
+
+  - name: "Responded"
+    description: "Company has responded (any form — email, call request, recruiter screen)."
+    next: ["Interview", "Rejected"]
+
+  - name: "Interview"
+    description: "Active interview process (any stage: phone screen, technical, panel)."
+    next: ["Offer", "Rejected"]
+
+  - name: "Offer"
+    description: "Formal offer received. In negotiation or pending decision."
+    next: ["Accepted", "Rejected"]
+
+  - name: "Rejected"
+    description: "Application rejected at any stage (ATS, screen, interview, offer)."
+    next: []
+    terminal: true
+
+  - name: "Discarded"
+    description: "Manually discarded — no response after 14+ days, or role no longer relevant."
+    next: []
+    terminal: true
+
+  - name: "SKIP"
+    description: "Scored below 4.0 or manually skipped. Never applied."
+    next: []
+    terminal: true

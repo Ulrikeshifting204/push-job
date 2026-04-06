@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cover Letter — {{name}}</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Calibri', 'Segoe UI', Arial, sans-serif;
+      font-size: 11pt;
+      color: #1a1a1a;
+      background: #fff;
+      padding: 1in 1.1in;
+      max-width: 8.5in;
+      min-height: 11in;
+    }
+
+    /* Sender Info */
+    .sender {
+      margin-bottom: 28px;
+    }
+
+    .sender-name {
+      font-size: 14pt;
+      font-weight: 700;
+      color: #1a3c5e;
+      margin-bottom: 3px;
+    }
+
+    .sender-tagline {
+      font-size: 9.5pt;
+      color: #555;
+      margin-bottom: 6px;
+    }
+
+    .sender-contact {
+      font-size: 9.5pt;
+      color: #444;
+      line-height: 1.6;
+    }
+
+    .sender-contact a {
+      color: #1a3c5e;
+      text-decoration: none;
+    }
+
+    /* Divider */
+    .divider {
+      border: none;
+      border-top: 2px solid #1a3c5e;
+      margin: 16px 0 24px 0;
+    }
+
+    /* Date */
+    .date {
+      font-size: 10.5pt;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    /* Recipient */
+    .recipient {
+      margin-bottom: 24px;
+      font-size: 10.5pt;
+      line-height: 1.6;
+      color: #2a2a2a;
+    }
+
+    .recipient .company {
+      font-weight: 600;
+    }
+
+    /* Salutation */
+    .salutation {
+      font-size: 11pt;
+      margin-bottom: 16px;
+    }
+
+    /* Body */
+    .body p {
+      font-size: 11pt;
+      line-height: 1.7;
+      color: #1a1a1a;
+      margin-bottom: 16px;
+      text-align: left;
+    }
+
+    /* Closing */
+    .closing {
+      margin-top: 28px;
+      font-size: 11pt;
+    }
+
+    .closing-line {
+      margin-bottom: 40px;
+    }
+
+    .signature-name {
+      font-size: 12pt;
+      font-weight: 700;
+      color: #1a3c5e;
+      margin-bottom: 2px;
+    }
+
+    .signature-title {
+      font-size: 9.5pt;
+      color: #555;
+    }
+
+    @media print {
+      body { padding: 0.8in 1in; }
+      a { color: inherit !important; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- SENDER BLOCK -->
+  <div class="sender">
+    <div class="sender-name">{{name}}</div>
+    <div class="sender-tagline">{{tagline}}</div>
+    <div class="sender-contact">
+      {{email}} &nbsp;·&nbsp; {{phone}}<br />
+      {{location}}<br />
+      <a href="{{linkedin}}">{{linkedin_display}}</a>
+      &nbsp;·&nbsp;
+      <a href="{{github}}">{{github_display}}</a>
+    </div>
+  </div>
+
+  <hr class="divider" />
+
+  <!-- DATE -->
+  <div class="date">{{date}}</div>
+
+  <!-- RECIPIENT -->
+  <div class="recipient">
+    {{hiring_manager_name}}<br />
+    {{hiring_manager_title}}<br />
+    <span class="company">{{company}}</span>
+  </div>
+
+  <!-- SALUTATION -->
+  <div class="salutation">{{salutation}}</div>
+
+  <!-- BODY PARAGRAPHS -->
+  <div class="body">
+    <p>{{opening_hook}}</p>
+    <p>{{body_experience}}</p>
+    <p>{{body_proof_point}}</p>
+    <p>{{body_forward_looking}}</p>
+  </div>
+
+  <!-- CLOSING -->
+  <div class="closing">
+    <div class="closing-line">{{closing_line}}</div>
+    <div class="signature-name">{{name}}</div>
+    <div class="signature-title">{{tagline}}</div>
+  </div>
+
+</body>
+</html>

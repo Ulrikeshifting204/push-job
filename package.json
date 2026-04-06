@@ -1,0 +1,31 @@
+{
+  "name": "push-job",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "AI-powered job search pipeline for cloud, cybersecurity, and tech roles",
+  "scripts": {
+    "pdf": "node scripts/generate-pdf.mjs",
+    "merge": "node scripts/tracker-merge.mjs",
+    "check": "node scripts/pipeline-check.mjs"
+  },
+  "dependencies": {
+    "playwright": "^1.44.0"
+  },
+  "author": "Tushae Thomas (BER/TMG)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TushaeThomas/push-job.git"
+  },
+  "keywords": [
+    "job-search",
+    "claude-code",
+    "cloud",
+    "cybersecurity",
+    "career",
+    "ai-agent",
+    "open-source",
+    "devsecops",
+    "soc-analyst"
+  ]
+}

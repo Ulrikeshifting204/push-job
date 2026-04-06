@@ -1,0 +1,25 @@
+# Personal data — never commit
+data/
+reports/
+output/
+batch/tracker-additions/
+
+# Personal config
+portals.yml
+config/profile.yml
+resume.md
+portfolio.md
+
+# Dependencies
+node_modules/
+
+# Environment
+.env
+.env.*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Playwright
+/playwright/.cache/
