@@ -200,7 +200,7 @@ The agent prepares. You review. You submit.
 ## Built By
 
 **Tushae Thomas (Brian)**
-AWS re/Start Graduate · Azure SOC Practitioner · Cybersecurity Builder
+AWS re/Start Student · Azure SOC Practitioner · Cybersecurity Builder
 
 - Background: Microsoft Sentinel, KQL, Active Directory, honeynet-based threat detection
 - Pursuing: AWS Cloud Practitioner (CLF-C02) · CompTIA CySA+
